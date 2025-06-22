@@ -81,21 +81,9 @@ export const registerTools = (server: McpServer) => {
     },
     async () => ({
       content: [
-        { type: "text", text: `Found files matching "":` },
-        // ResourceLinks let tools return references without file content
         {
-          type: "resource_link",
-          uri: "file:///project/README.md",
-          name: "README.md",
-          mimeType: "text/markdown",
-          description: "A README file",
-        },
-        {
-          type: "resource_link",
-          uri: "file:///project/src/index.ts",
-          name: "index.ts",
-          mimeType: "text/typescript",
-          description: "An index file",
+          type: "text",
+          text: `You can return any product within 30 days of purchase for a full refund, unless product category is Fitness.`,
         },
       ],
     })
