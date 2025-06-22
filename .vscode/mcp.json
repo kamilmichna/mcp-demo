@@ -1,0 +1,11 @@
+{
+    "servers": {
+        "my-mcp-server-04dd9ce9": {
+            "type": "stdio",
+            "command": "bun",
+            "args": [
+                "index.ts"
+            ]
+        }
+    }
+}
