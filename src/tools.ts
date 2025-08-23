@@ -1,12 +1,8 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { getMockProducts, ProductCategory } from "./db";
 import { z } from "zod";
-import { serve } from "bun";
 
 export const registerTools = (server: McpServer) => {
-  // Register a tool that returns the current date and time
-  // Assume getMockProducts is imported from somewhere
-
   server.registerTool(
     "calculateBasketTotal",
     {
